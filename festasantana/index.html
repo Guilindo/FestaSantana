@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=790, user-scalable=no" />
+        <title>A Festa Sant'ana</title>
+    </head>
+    <body>
+        <!-- DESTAQUE PRINCIPAL -->
+        <section id="section1">
+            <img id="destaque-logo" src="img/logo.png" alt="Logo" /> <a href="#section6" id="destaque-seta"> <img src="img/destaque-seta.png" alt="seta" /></a>
+        </section>
+        <!-- EXPLICAÇÃO DA PEÇA -->
+        <section id="section6">
+            <div class="area-util">
+                <div class="container">
+                    <div id="mutamba-txt">
+                        <h2><img id="mutamba-titulo" src="img/festa-santana.png" alt="Festa Sant ana" title="Salve Rainha" /></h2>
+                        <p>
+                            &nbsp; &nbsp; &nbsp;A Festa de Santana conta a história de um homem que durante anos afasta-se da convivência com a irmã e o pai, preferindo a solidão da casa vazia, a espera angustiante pela Festa de Santana de
+                            todo ano e o desejo obstinado de entender os motivos que levaram a sua mãe partir para sempre, quando ele ainda era só um menino.
+                            <br />
+                            <br />
+                            <span>
+                                Direção e<br />
+                                Concepção:
+                            </span>
+                            <br />
+                            Muriel Vitória <br />
+                            <br />
+                            <span>Elenco: </span><br />
+                            Rodrigo Marcoz<br />
+                        </p>
+                    </div>
+                    <div id="mutamba-silhuetas"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section-elenco">
+            <div class="area-util">
+                <img src="img/elenco.jpg" id="elenco-foto" class="ator" alt="Elenco Rodrigo Marcoz" />
+                <ul id="mutamba-elenco" class="mobile">
+                    <li class="mutamba-ator" id="padre"><img src="img/ilustracao1.png" class="ator" alt="Rodrigo Marcoz" /></li>
+                    <li class="mutamba-ator" id="mazinho"><img src="img/ilustracao2.png" class="ator" alt="Rodrigo Marcoz" /></li>
+                    <li class="mutamba-ator" id="mutamba"><img src="img/ilustracao3.png" class="ator" alt="Rodrigo Marcoz" /></li>
+                </ul>
+            </div>
+        </section>
+        <section id="sectionx">
+            <div class="area-util2">
+                <h2 id="video-titulo"><img src="img/festa-santana.png" alt="Logo Prometido" title="Logo Salve Rainha" /></h2>
+                <div id="video">
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"><img class="cover" src="img/video-placeholder.jpg" /></div>
+                    <div style="display: none;">
+                        <iframe id="ytplayer" type="text/html" width="100%" height="100%" src="" autoplay="1" frameborder="0"> </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="txt-section">
+            <div class="area-util">
+                <div id="video-txt">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; O titular dos direitos de exploração dessa obra é do Grupo Trapo, sendo que o acesso e visualização somente é permitido através do presente site para fins privados e domésticos.
+                        <br />
+                        <br />
+                        &nbsp; &nbsp; &nbsp; Estão proibidas quaisquer outras formas de utilização tais como: copiar, editar, adicionar, reduzir, exibir ou difundir publicamente, transmitir por radiodifusão, cabo ou qualquer outro meio, bem
+                        como trocar, emprestar ou praticar qualquer ato de comercialização.
+                        <br />
+                        <br />
+                        &nbsp; &nbsp; &nbsp; A violação de quaisquer desses direitos exclusivos do titular, acarretará a sanções prevista na lei 2.848 de 07/12/1940 artigo 184 do código penal.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer id="footerx">
+            <div id="area-texto">
+                <div id="lista-footer">
+                    <a href="https://www.facebook.com/grupotrapo/" class="opacity" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/user/grupotrapo" class="opacity" target="_blank"><img src="img/youtube.png" alt="Youtube" /></a>
+                    <a href="https://www.instagram.com/grupotrapo/" class="opacity" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+                    <a target="_blank" id="grupotrapo"><img class="img-footer-2" src="img/arroba.png" alt="Grupo Trapo" /></a>
+                </div>
+            </div>
+            <img id="footer-bg" src="img/footer-img.jpg" alt="footer background" />
+        </footer>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery("#video").on("click", function () {
+            $("iframe").attr("src", "//www.youtube.com/embed/GKsGAb7v-HE?controls=1");
+        });
+    </script>
+</html>
